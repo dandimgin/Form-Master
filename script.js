@@ -2,46 +2,6 @@ let produkArray = [];
 let autoincrement = 1;
 let editIndex = -1; // Menyimpan indeks produk yang sedang diedit
 
-// function saveForm() {
-//     const kodeproduk = "MD-0" + autoincrement++;
-//     const namaproduk = document.getElementById("namaproduk").value;
-//     const satuan = document.getElementById("satuan").value;
-//     const kategori = document.getElementById("kategori").value;
-//     const hargaproduk = document.getElementById("hargaproduk").value;
-//     const urlimage = document.getElementById("urlimage").value;
-//     const stokproduk = document.getElementById("stokproduk").value;
-
-//     if (editIndex === -1) {
-//         // Jika tidak dalam mode edit, tambahkan produk baru
-//         const kodeproduk = "MD-0" + autoincrement++;
-//         produkArray.push({
-//             kodeproduk,
-//             namaproduk,
-//             satuan,
-//             kategori,
-//             hargaproduk,
-//             urlimage,
-//             stokproduk,
-//         });
-//     } else {
-//         // Jika dalam mode edit, update produk yang ada
-//         const kodeproduk = produkArray[editIndex].kodeproduk;
-//         produkArray[editIndex] = {
-//             kodeproduk,
-//             namaproduk,
-//             satuan,
-//             kategori,
-//             hargaproduk,
-//             urlimage,
-//             stokproduk,
-//         };
-//         editIndex = -1; // Reset editIndex setelah edit
-//     }
-
-//     renderTable();
-//     clearForm(); // Menghapus form setelah simpan
-// }
-
 function saveForm() {
     const namaproduk = document.getElementById("namaproduk").value;
     const satuan = document.getElementById("satuan").value;
