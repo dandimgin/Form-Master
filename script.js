@@ -13,6 +13,7 @@ function saveForm() {
 
     if (editIndex === -1) {
         // Jika tidak dalam mode edit, tambahkan produk baru
+        const kodeproduk = produkArray[editIndex].kodeproduk;
         produkArray.push({
             kodeproduk,
             namaproduk,
